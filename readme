@@ -1,0 +1,7 @@
+L'exercice consiste à afficher ce carnet d'adresses dans une page web.
+Il faut pouvoir afficher une liste des personnes, avec leur adresse, la ville et le pays correspondants.
+On doit également pouvoir ajouter une nouvelle entrée au carnet d'adresses (avec nouvelle ville / nouveau pays s'il n'existe pas dans le store). On doit également pouvoir supprimer une personne.
+Il n'y a pas de backend, tout se fait dans la partie client.
+Pour la techno, React est privilégié, mais Js pur fera aussi l'affaire.
+
+Petite demande supplémentaire de dernière minute du client : il voudrait, lorsqu'on recharge la page, que le carnet d'adresses réaffiche les données saisies juste avant.

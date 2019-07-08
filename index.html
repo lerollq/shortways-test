@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Technical Test</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+          
+        <table class="table">
+          <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Code</th>
+                <th></th>
+              </tr>
+          </thead>
+          <tbody id="table-container"></tbody>
+        </table>
+
+      </div>
+
+      <div class="d-flex flex-row justify-content-around">
+
+        <div class="card align-self-start">
+          <div class="card-header">
+            Add Country
+          </div>
+          <div class="card-body">
+
+            <form id="form-add-country">
+
+              <div class="form-group">
+                <label for="country-code">Country Code</label>
+                <input name="country-code" type="text" class="form-control" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="country-code">Country Name</label>
+                <input name="country-name" type="text" class="form-control" required/>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Ajouter</button>
+
+            </form>
+
+          </div>
+        </div>
+
+        <div class="card align-self-start">
+          <div class="card-header">
+            Add City
+          </div>
+          <div class="card-body">
+
+            <form id="form-add-city">
+
+              <div class="form-group">
+                <label for="city-country">Country</label>
+                <select id="city-country" name="city-country" class="form-control" required></select>
+              </div>
+
+              <div class="form-group">
+                <label for="city-name">City Name</label>
+                <input name="city-name" type="text" class="form-control" required/>
+              </div>
+              <button class="btn btn-primary" type="submit">Ajouter</button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="card">
+
+          <div class="card-header">
+            Add Member
+          </div>
+
+          <div class="card-body">
+
+            <form id="form-add-member">
+
+              <div class="form-group">
+                <label for="member-firstname">FirstName</label>
+                <input name="member-firstname" type="text" class="form-control" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="member-lastname">LastName</label>
+                <input name="member-lastname" type="text" class="form-control" required/>
+              </div>
+              
+              <div class="form-group">
+                <label for="member-lastname">Address</label>
+                <input name="member-address" type="text" class="form-control" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="member-city">City</label>
+                <select id="member-city" name="member-city" class="form-control" required></select>
+              </div>
+
+              <div class="form-group">
+                <label for="member-country">Country</label>
+                <select id="member-country" name="member-country" class="form-control" required></select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Ajouter</button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+
+    <script src="./scripts/EventDispatcher.js"></script>
+    <script src="./scripts/Models/StoreModel.js"></script>
+    <script src="./scripts/Views/StoreView.js"></script>
+    <script src="./scripts/Controllers/StoreController.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
